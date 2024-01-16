@@ -6,13 +6,77 @@
     <meta name="description" content="Simulador sitio de peliculas" />
     <meta name="keywords" content="js, boostrap, crud" />
     <meta name="Author" content="Lisandro Civili de la Vega" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
     <link rel="stylesheet" href="./css/style.css">
     <title>Inicio</title>
 </head>
 <body>
-    
-
+  <header>
+    <nav class="navbar navbar-expand-lg" id="header">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="./img/logoHeader.png" alt="Logo Muvis" id="logoHeader">
+        </a>
+        <a href="./index.html">
+          <i class="bi bi-house-door-fill" id="homeButton" ></i>
+        </a>
+        <a href="">
+          <i class="bi bi-search" id="searchButton"></i>
+        </a>
+        <button class="navbar-toggler" id="burgerButton" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <button type="button" class="btn-close bg-light" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="offcanvasOptions">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="">Perfil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="">Mi lista</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="">Ajustes</a>
+              </li>
+              <li class="nav-item border-top">
+                <a class="nav-link active" aria-current="page" href="">Cerrar sesión</a>
+              </li>
+            </ul>
+            <!-- <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form> -->
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+    <main>
+        <div class="" id="trend">
+          <div class="swiffy-slider">
+            <ul class="slider-container">
+                <li><img src="https://source.unsplash.com/49b9l_29ceA/1600x900" style="max-width: 100%;height: auto;"></li>
+                <li><img src="https://source.unsplash.com/nKAglN6HBH8/1600x900" style="max-width: 100%;height: auto;"></li>
+                <li><img src="https://source.unsplash.com/E9ZwWcMGzj8/1600x900" style="max-width: 100%;height: auto;"></li>
+            </ul>
+        
+            <button type="button" class="slider-nav"></button>
+            <button type="button" class="slider-nav slider-nav-next"></button>
+        
+            <div class="slider-indicators slider-indicators-round slider-indicators-sm ">
+                <button class="active"></button>
+                <button></button>
+                <button></button>
+            </div>
+          </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
     <script src="./js/bootstrap.min.js"></script>
 </body>
 </html>

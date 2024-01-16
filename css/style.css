@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,100&display=swap');
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+:root {
+    --color1: #161A30;
+    --color2: #31304D;
+    --color3: #B6BBC4;
+}
+
+#header{
+    background-color: var(--color1);
+}
+#burgerButton{
+    background-color: var(--color3);
+}
+#offcanvasOptions a{
+    color: #B6BBC4;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+}
+@media screen and (max-width: 575px){
+    
+    #logoHeader{
+        width: 65px;
+        height: 60px;
+    }
+    #homeButton, #searchButton{
+        font-size: 35px;
+        color: var(--color3);
+    }
+    .navbar-brand{
+        margin: 0;
+    }
+    .offcanvas{
+        --bs-offcanvas-width: 250px;
+        background-color: var(--color1);
+    }
+
+}
