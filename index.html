@@ -16,7 +16,7 @@
   <header class="fixed-top" id="header">
     <nav class="navbar navbar-expand-lg" id="header">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" id="burgerButton" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbarLeft" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
           <img src="./img/logoHeader.png" alt="Logo Muvis" id="logoHeader">
         </a>
         <a href="./index.html">
@@ -25,9 +25,10 @@
         <a id="openSearchButton">
           <i class="bi bi-search" id="searchImage"></i>
         </a>
-        <!-- <button class="navbar-toggler"  > -->
-          <span class="navbar-toggler-icon" id="burgerButton" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation"></span>
-        <!-- </button> -->
+        <span class="navbar-toggler-icon" id="burgerButton" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation"></span>
+
+        <!-- OFFCANVAS RIGHTSIDE -->
+
         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
           <div class="offcanvas-header">
             <button type="button" class="btn-close bg-light" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -47,12 +48,12 @@
                 <a class="nav-link active" aria-current="page" href="">Cerrar sesión</a>
               </li>
             </ul>
-            <!-- <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form> -->
           </div>
         </div>
+
+        <!-- OFFCANVAS LEFTSIDE -->
+
+        
       </div>
     </nav>
   </header>
