@@ -20,18 +20,20 @@
           <img src="./img/logoHeader.png" alt="Logo Muvis" id="logoHeader">
         </a>
         <a href="./index.html">
-          <i class="bi bi-house-door-fill" id="homeButton" ></i>
+          <i class="bi bi-bookmark-plus-fill" id="myListButton"></i>
         </a>
         <a id="openSearchButton">
           <i class="bi bi-search" id="searchImage"></i>
         </a>
-        <span class="navbar-toggler-icon" id="burgerButton" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation"></span>
+        <div id="buttonHitbox">
+          <span class="navbar-toggler-icon" id="burgerButton" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation"></span>
+        </div>
 
         <!-- OFFCANVAS RIGHTSIDE -->
 
         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
           <div class="offcanvas-header">
-            <button type="button" class="btn-close bg-light" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
           <div class="offcanvas-body">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="offcanvasOptions">
@@ -50,10 +52,6 @@
             </ul>
           </div>
         </div>
-
-        <!-- OFFCANVAS LEFTSIDE -->
-
-        
       </div>
     </nav>
   </header>
@@ -66,14 +64,13 @@
     </form>
   </div>
     <main>
-        <section class="" id="trend">
+        <section id="trend">
           <div class="swiffy-slider slider-nav-autoplay slider-item-snapstart slider-item-nogap">
             <ul class="slider-container" id="trendSlider">
                 <li><img src="./img/elijocreer.webp" class=""></li>
-                <li><img src="./img/thebear.jpg" style="max-width: 100%;height: auto;"></li>
-                <li><img src="./img/argentina1985.webp" style="max-width: 100%;height: auto;"></li>
+                <li><img src="./img/thebear.jpg"></li>
+                <li><img src="./img/argentina1985.webp"></li>
             </ul>
-        
             <button type="button" class="slider-nav"></button>
             <button type="button" class="slider-nav slider-nav-next"></button>
         
@@ -82,6 +79,10 @@
                 <button></button>
                 <button></button>
             </div>
+          </div>
+          <div id="trendImagesText">
+            <h1>Aca va el titulo</h1>
+            <p>Muy breve descripcion</p>
           </div>
         </section>
         <section>
@@ -187,8 +188,8 @@
           Quam impedit cum eveniet quibusdam. Numquam qui totam explicabo dicta eos culpa maxime exercitationem. A sunt natus, dolor iure aliquam veniam facere totam, hic debitis perspiciatis recusandae aut nemo fugiat.</p>
         </section>
     </main>
-    <script src="./js/mainStyles.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
     <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/mainStyles.js"></script>
 </body>
 </html>

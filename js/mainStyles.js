@@ -15,14 +15,14 @@ window.addEventListener("scroll", ()=>{ //se usa "window" porque el scroll es un
 // funcion para abrir el input de busqueda al presionar lupa
 
 const searchButton = document.getElementById("openSearchButton");
-const burgerButton = document.getElementById("burgerButton");
+const burgerButtonHitbox = document.getElementById("buttonHitbox");
 const toggleButton = document.getElementById("searchToggle");
 
 searchButton.addEventListener("click", ()=>{
     toggleButton.classList.toggle("displayToggle")
 })
 
-burgerButton.addEventListener("click", ()=>{
+burgerButtonHitbox.addEventListener("click", ()=>{
     if (!toggleButton.classList.contains("displayToggle")) {
         toggleButton.classList.add("displayToggle")
     }
