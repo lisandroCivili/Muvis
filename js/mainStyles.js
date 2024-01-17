@@ -11,11 +11,11 @@ window.addEventListener("scroll", ()=>{ //se usa "window" porque el scroll es un
     if (window.scrollY > 0) {
         document.getElementById("searchToggle").classList.add("displayToggle")
     }
-   
 })
 
 // funcion para abrir el input de busqueda al presionar lupa
 
 const searchButton = document.getElementById("openSearchButton");
+const offcanvasBar = document.getElementById("offcanvasNavbar");
 
 searchButton.addEventListener("click", ()=>{document.getElementById("searchToggle").classList.toggle("displayToggle")})
