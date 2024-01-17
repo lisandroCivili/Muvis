@@ -61,6 +61,7 @@
     }
     #searchToggle{
         top: 64px;
+        display: none;
     }
     #searchToggle form{
         height: 60px;
@@ -86,6 +87,6 @@
         width: 15%;
     }
     .displayToggle{
-        display: none;
+        display: block;
     }
 }
