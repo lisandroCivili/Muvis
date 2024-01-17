@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,100&display=swap');
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+:root {
+    --color1: #161A30;
+    --color2: #31304D;
+    --color3: #B6BBC4;
+}
+#offcanvasOptions a{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+}
+#trendSlider img{
+    filter: brightness(80%);
+}
+@media screen and (max-width: 575px){
+    
+    #logoHeader{
+        width: 55px;
+        height: 50px;
+    }
+    #homeButton, #openSearchButton{
+        font-size: 30px;
+        color: white;
+    }
+    #burgerButton{
+        width: 26px;
+    }
+    .navbar-brand{
+        margin: 0;
+    }
+    #header{
+        height: 70px;
+    }
+    .headerBackground{
+        background-color: #161a30e8;
+        transition: 0.3s ease;
+    }
+    .offcanvas{
+        --bs-offcanvas-width: 250px;
+        background-color: var(--color1);
+    }
+    #trendSlider img{
+        height: 100%;
+        width: 100%;
+        position: relative;
+        z-index: -1;
+    }
+    #trendSlider li{
+        padding-top: 45px;
+        box-shadow: inset 0 75px 30px var(--color1);
+        position: relative;
+    }
+    .navbar{
+        --bs-navbar-toggler-icon-bg: url(../img/burgerbutton.png);
+    }
+    #searchToggle{
+        top: 64px;
+    }
+    #searchToggle form{
+        height: 60px;
+        background-color: var(--color1);
+    }
+    #searchInput{
+        border-radius: 10px;
+        width: 85%;
+        padding:10px;
+        margin-right: 10px;
+        margin-left: 10px;
+        background-color: #31304D;
+        color: white;
+        font-size: 20px;
+    }
+    #searchInput::placeholder{
+        font-size: 20px;
+        color:#B6BBC4;
+    }
+    #searchButton{
+        color: white;
+        font-size: 30px;
+        width: 15%;
+    }
+    .displayToggle{
+        display: none;
+    }
+}
