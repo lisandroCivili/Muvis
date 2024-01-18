@@ -56,7 +56,7 @@
     </nav>
   </header>
   <div class="fixed-top displayToggle" id="searchToggle">
-    <form>
+    <form id="inputToggleForm">
       <input type="text" id="searchInput" placeholder="Ingrese una pelicula o serie">
       <a class="text-center" id="searchButton">
         <i class="bi bi-search" id="searchImage"></i>
@@ -65,11 +65,29 @@
   </div>
     <main>
         <section id="trend">
-          <div class="swiffy-slider slider-nav-autoplay slider-item-snapstart slider-item-nogap">
+          <div class="swiffy-slider slider-item-snapstart slider-item-nogap">
             <ul class="slider-container" id="trendSlider">
-                <li><img src="./img/elijocreer.webp" class=""></li>
-                <li><img src="./img/thebear.jpg"></li>
-                <li><img src="./img/argentina1985.webp"></li>
+                <li>
+                  <img src="./img/elijocreer.webp">
+                  <div class="trendInfoText text-light">
+                    <h1>Aqui va el titulo</h1>
+                    <p>Aqui muy breve descripcion</p>
+                  </div>
+                </li>
+                <li>
+                  <img src="./img/thebear.jpg">
+                  <div class="trendInfoText text-light">
+                    <h1>Aqui va el titulo</h1>
+                    <p>Aqui muy breve descripcion</p>
+                  </div>
+                </li>
+                <li>
+                  <img src="./img/argentina1985.webp">
+                  <div class="trendInfoText text-light">
+                    <h1>Aqui va el titulo</h1>
+                    <p>Aqui muy breve descripcion</p>
+                  </div>
+                </li>
             </ul>
             <button type="button" class="slider-nav"></button>
             <button type="button" class="slider-nav slider-nav-next"></button>
@@ -79,10 +97,6 @@
                 <button></button>
                 <button></button>
             </div>
-          </div>
-          <div id="trendImagesText">
-            <h1>Aca va el titulo</h1>
-            <p>Muy breve descripcion</p>
           </div>
         </section>
         <section>

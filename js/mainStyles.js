@@ -1,3 +1,5 @@
+const toggleButton = document.getElementById("searchToggle");
+const inputToggleForm = document.getElementById("inputToggleForm");
 // funcion para cambiar el backgorund del header cuando se scrollea
 
 window.addEventListener("scroll", ()=>{ //se usa "window" porque el scroll es una funcion global de toda la pagina
@@ -8,7 +10,7 @@ window.addEventListener("scroll", ()=>{ //se usa "window" porque el scroll es un
         header.classList.remove("headerBackground")
     }
     if (window.scrollY > 0) {
-        document.getElementById("searchToggle").classList.add("displayToggle")
+        inputToggleForm.classList.add("headerBackground")
     }
 })
 
@@ -16,7 +18,6 @@ window.addEventListener("scroll", ()=>{ //se usa "window" porque el scroll es un
 
 const searchButton = document.getElementById("openSearchButton");
 const burgerButtonHitbox = document.getElementById("buttonHitbox");
-const toggleButton = document.getElementById("searchToggle");
 
 searchButton.addEventListener("click", ()=>{
     toggleButton.classList.toggle("displayToggle")
