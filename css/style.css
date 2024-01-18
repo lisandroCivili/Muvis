@@ -11,9 +11,16 @@
     --color3: #B6BBC4;
 }
 #offcanvasOptions a{
-    color: white;
+    color: #c2c7cf;
     font-family: 'Roboto', sans-serif;
-    font-size: 25px;
+    font-size: 23px;
+    padding-left: 8px;
+}
+.btn-close{
+    --bs-btn-close-bg: url(../img/closeButton.png)
+}
+#trend{
+    position: relative;
 }
 #trendSlider img{
     filter: brightness(80%);
@@ -24,7 +31,7 @@
         width: 55px;
         height: 50px;
     }
-    #homeButton, #openSearchButton{
+    #myListButton, #openSearchButton{
         font-size: 30px;
         color: white;
     }
@@ -45,16 +52,18 @@
         --bs-offcanvas-width: 250px;
         background-color: var(--color1);
     }
+    
+    #trendSlider li{
+        padding-top: 45px;
+        height: 82vh;
+        box-shadow: inset 0 75px 30px var(--color1);
+        position: relative;
+    }
     #trendSlider img{
-        height: 100%;
+        height: 85%;
         width: 100%;
         position: relative;
         z-index: -1;
-    }
-    #trendSlider li{
-        padding-top: 45px;
-        box-shadow: inset 0 75px 30px var(--color1);
-        position: relative;
     }
     .navbar{
         --bs-navbar-toggler-icon-bg: url(../img/burgerbutton.png);
@@ -62,7 +71,7 @@
     #searchToggle{
         top: 64px;
     }
-    #searchToggle form{
+    #inputToggleForm{
         height: 60px;
         background-color: var(--color1);
     }
@@ -80,6 +89,14 @@
         font-size: 20px;
         color:#B6BBC4;
     }
+    .trendInfoText{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* margin-top: 24px; */
+        background-color: var(--color1);
+        box-shadow: 0px 0px 30px 10px var(--color1), 0px -20px 30px 10px var(--color1);
+    }     
     #searchButton{
         color: white;
         font-size: 30px;
